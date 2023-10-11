@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" styleClass="bpane" stylesheets="@css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clothaidv2.LoginPage">
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="470.0" style="-fx-background-color: fffff;" styleClass="right-pane" stylesheets="@css/styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="87.0" layoutY="166.0" prefHeight="30.0" prefWidth="84.0" text="Username :">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTF" layoutX="171.0" layoutY="169.0" prefHeight="26.0" prefWidth="210.0" promptText="Enter Username" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="87.0" layoutY="221.0" prefHeight="30.0" prefWidth="84.0" text="Password :">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="12.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passTF" layoutX="171.0" layoutY="225.0" prefHeight="26.0" prefWidth="211.0" promptText="Enter Password" />
+            <Button layoutX="136.0" layoutY="306.0" mnemonicParsing="false" onAction="#setLoginBtnOnAction" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: FF8C42;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="136.0" layoutY="363.0" mnemonicParsing="false" onAction="#setSignUpBtnLoginPageonAction" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: FF8C42;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="messageInvalid" alignment="CENTER" contentDisplay="CENTER" layoutX="10.4" layoutY="269.0" prefHeight="20.0" prefWidth="470.0" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="95.0" layoutY="46.0" prefHeight="61.0" prefWidth="282.0" text="Welcome to Cloth Aid">
+               <font>
+                  <Font name="Leelawadee Bold" size="25.0" />
+               </font>
+            </Label>
+            <TextFlow layoutX="105.0" layoutY="108.0" />
+            <TextFlow layoutX="63.0" layoutY="99.0" nodeOrientation="LEFT_TO_RIGHT">
+               <children>
+                  <TextFlow />
+               </children>
+            </TextFlow>
+            <Label alignment="CENTER" layoutX="30.0" layoutY="99.0" prefHeight="62.0" prefWidth="411.0" text=" Join our community that can bring revolution!" textFill="#eb8754" wrapText="true">
+               <font>
+                  <Font name="Lucida Sans Demibold Roman" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="510.0" prefWidth="380.0" style="-fx-background-color: FF8C42;" styleClass="left-pane" stylesheets="@css/styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="donateImageView" fitHeight="290.0" fitWidth="362.0" layoutX="9.0" layoutY="166.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="10.0">
+               <image>
+                  <Image url="@images/login-img.png" />
+               </image>
+            </ImageView>
+            <Circle fill="WHITE" layoutX="181.0" layoutY="98.0" radius="84.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" AnchorPane.leftAnchor="97.0" AnchorPane.rightAnchor="115.80000000000001" AnchorPane.topAnchor="14.0" />
+            <ImageView fx:id="logoImageView" fitHeight="143.0" fitWidth="112.0" layoutX="125.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/img.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

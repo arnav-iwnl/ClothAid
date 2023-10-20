@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tmkc.SignupPage">
+    <children>
+        <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="550.0" prefWidth="377.0" style="-fx-background-color: EB5E28;">
+         <children>
+            <ImageView fitHeight="165.0" fitWidth="208.0" layoutX="72.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@aid-image.jfif" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+        <Label fx:id="messageInvalid" layoutX="579.0" layoutY="51.0" prefHeight="26.0" prefWidth="71.0" text="Register">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="17.0" />
+         </font></Label>
+        <Label layoutX="457.0" layoutY="163.0" prefHeight="18.0" prefWidth="54.0" text="Username" />
+        <Label layoutX="457.0" layoutY="295.0" prefHeight="18.0" prefWidth="54.0" text="Password" />
+        <TextField fx:id="txt_user" layoutX="544.0" layoutY="159.0" />
+        <PasswordField fx:id="txt_pass" layoutX="543.0" layoutY="292.0" />
+        <Button fx:id="bt_signup" layoutX="583.0" layoutY="398.0" mnemonicParsing="false" onAction="#setBt_signup" text="Signup" />
+      <Label layoutX="457.0" layoutY="206.0" prefHeight="18.0" prefWidth="54.0" text="Name" />
+      <TextField fx:id="txt_fname" layoutX="543.0" layoutY="203.0" />
+      <Label layoutX="457.0" layoutY="251.0" prefHeight="18.0" prefWidth="54.0" text="Address" />
+      <TextField fx:id="txt_address" layoutX="544.0" layoutY="248.0" />
+      <ImageView fitHeight="92.0" fitWidth="83.0" layoutX="392.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

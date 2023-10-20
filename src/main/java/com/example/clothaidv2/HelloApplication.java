@@ -1,19 +1,18 @@
-package com.example.clothaidv2;
+package com.example.tmkc;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("LoginPage.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 850, 510);
-        stage.initStyle(StageStyle.DECORATED);
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("login.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 850, 550);
+        stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
     }

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="850.0" style="-fx-background-color: CCC5B9;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tmkc.LoginPage">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="550.0" prefWidth="377.0" style="-fx-background-color: EB5E28;">
+         <children>
+            <ImageView fitHeight="306.0" fitWidth="456.0" layoutX="-1.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@login-img.png" />
+               </image>
+            </ImageView>
+            <Circle fill="WHITE" layoutX="195.0" layoutY="137.0" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+            <ImageView fitHeight="112.0" fitWidth="116.0" layoutX="137.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <Label fx:id="messageInvalid" layoutX="579.0" layoutY="51.0" text="Login">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="457.0" layoutY="163.0" text="username" />
+      <Label layoutX="457.0" layoutY="275.0" text="password" />
+      <TextField fx:id="txt_user" layoutX="544.0" layoutY="159.0" />
+      <PasswordField fx:id="txt_pass" layoutX="545.0" layoutY="271.0" />
+      <Button fx:id="bt_login" layoutX="583.0" layoutY="398.0" mnemonicParsing="false" onAction="#setBt_login" text="LOGIN" />
+      <Button layoutX="583.0" layoutY="440.0" mnemonicParsing="false" onAction="#setBt_SignUp" text="SignUp" />
+   </children>
+</AnchorPane>
